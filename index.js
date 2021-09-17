@@ -9,6 +9,12 @@ app.use(static);
 let commentsRoutes = require("./routes/comments");
 app.use(commentsRoutes);
 
+let contactRoutes = require("./routes/contacts");
+app.use(contactRoutes);
+
+let productsRoutes = require("./routes/products");
+app.use(productsRoutes);
+
 const port = process.env.PORT || 4001;
 
 app.listen(port, () => {
